@@ -82,7 +82,7 @@ public class Gpx10FileLogger implements IFileLogger {
 
 
 }
-/*
+
 class Gpx10AnnotateHandler implements Runnable {
     private static final org.slf4j.Logger tracer = LoggerFactory.getLogger(Gpx10AnnotateHandler.class.getSimpleName());
     String description;
@@ -154,7 +154,7 @@ class Gpx10AnnotateHandler implements Runnable {
         return waypoint.toString();
     }
 }
-*/
+
 
 class Gpx10WriteHandler implements Runnable {
     private static final org.slf4j.Logger tracer = LoggerFactory.getLogger(Gpx10WriteHandler.class.getSimpleName());

@@ -43,7 +43,7 @@ public class FileLoggerTests extends AndroidTestCase {
     @SmallTest
     public void testTrackPointXml_LatLongOnly(){
 
-        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, false, 41);
+        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, false, 41,null);
 
         Location loc = new Location("MOCK");
         loc.setLatitude(12.193);
@@ -60,7 +60,7 @@ public class FileLoggerTests extends AndroidTestCase {
     @SmallTest
     public void testTrackPointXml_ExtraInfo(){
 
-        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, false, 41);
+        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, false, 41,null);
 
         Location loc = new Location("MOCK");
         loc.setLatitude(12.193);
@@ -81,7 +81,7 @@ public class FileLoggerTests extends AndroidTestCase {
     @SmallTest
     public void testTrackPointXml_ExtraInfoWithoutSatellites(){
 
-        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, false, 0);
+        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, false, 0,null);
 
         Location loc = new Location("MOCK");
         loc.setLatitude(12.193);
@@ -101,7 +101,7 @@ public class FileLoggerTests extends AndroidTestCase {
     @SmallTest
     public void testTrackPointXml_NewTrackSegment(){
 
-        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, true, 0);
+        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, true, 0,null);
 
         Location loc = new Location("MOCK");
         loc.setLatitude(12.193);
@@ -122,7 +122,7 @@ public class FileLoggerTests extends AndroidTestCase {
     @SmallTest
     public void testTrackPointXml_BundledHDOP(){
 
-        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, true, 0);
+        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, true, 0,null);
 
         Location loc = new Location("MOCK");
         loc.setLatitude(12.193);
@@ -146,7 +146,7 @@ public class FileLoggerTests extends AndroidTestCase {
     @SmallTest
     public void testTrackPointXml_BundledGeoIdHeight(){
 
-        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, true, 0);
+        Gpx10WriteHandler writeHandler = new Gpx10WriteHandler(null, null, null, true, 0,null);
 
         Location loc = new Location("MOCK");
         loc.setLatitude(12.193);
